@@ -17,7 +17,7 @@
                    } 
                 ?>
                 <div class="content">
-                    <img src="php/images/profiles/<?php echo $row['img']?>" alt="">
+                    <img src="static/images/profiles/<?php echo $row['img']?>" alt="">
                     <div class="details">
                         <span><?php echo $row['fname'] . " " . $row['lname'] ?></span>
                         <p>You</p>
@@ -33,6 +33,6 @@
             </div>
         </section>
     </div>
-    <script src="javascript/users.js"></script>
+    <script src="static/js/users.js"></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <body id="index">
     <section class="header-wrapper">
         <nav>
-            <a href="."><img src="php/images/icons/home.jpg" class="logo"></a>
+            <a href="."><img src="static/images/icons/home.jpg" class="logo"></a>
             <ul id="start">
                 <li><a href="login.php">Login</a></li>
                 <li><a href="signup.php">Signup</a></li>
@@ -36,6 +36,6 @@
             <p>&copy; SayHii <?php echo date("Y");?>. By LearnTech.</p>
         </div>
     </section>
-    <script src="javascript/index.js"></script>
+    <script src="static/js/index.js"></script>
 </body>
 </html>

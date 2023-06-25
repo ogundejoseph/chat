@@ -18,7 +18,7 @@
                    } 
                 ?>
                 <a href="users.php" class="back-icon"><i class="fas fa-arrow-left"></i></a>
-                <img src="php/images/profiles/<?php echo $row['img']?>" alt="">
+                <img src="static/images/profiles/<?php echo $row['img']?>" alt="">
                 <div class="details">
                     <span><?php echo $row['fname'] . " " . $row['lname'] ?></span>
                     <p id="status"></p>
@@ -35,7 +35,7 @@
             </form>
         </section>
     </div>
-    <script src="javascript/chat.js"></script>
-    <script src="javascript/status.js"></script>
+    <script src="static/js/chat.js"></script>
+    <script src="static/js/status.js"></script>
 </body>
 </html>

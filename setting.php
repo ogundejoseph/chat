@@ -68,7 +68,7 @@
             </form>
         </section>   
     </div>
-    <script src="javascript/setting.js"></script>
-    <script src="javascript/profile-del.js"></script>
+    <script src="static/js/setting.js"></script>
+    <script src="static/js/profile-del.js"></script>
 </body>
 </html>

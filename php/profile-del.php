@@ -8,7 +8,7 @@
         if(mysqli_num_rows($curr_img) > 0){ //if image already exist then we delete current image before uploading new image
             $row = mysqli_fetch_assoc($curr_img);
             if(!empty($row['img']) && $row['img'] != "profile.jpg"){
-                $path = "images/profiles/$row[img]"; //getting current image location
+                $path = "../static/images/profiles/$row[img]"; //getting current image location
                 if(file_exists($path)) { //checking if the image is still available in its location
                     unlink($path); //deleting current image
                     echo "Successfull. ";

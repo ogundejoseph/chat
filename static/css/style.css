@@ -332,7 +332,7 @@ form .name-details .field:last-child{
     background-size: cover;
     position: relative;
     background-image: linear-gradient(rgba(0,0,0,0.75),
-                                      rgba(0,0,0,0.75)),url(php/images/background.jpg);
+                                      rgba(0,0,0,0.75)),url(../images/background.jpg);
 }
 nav{
     display: flex;

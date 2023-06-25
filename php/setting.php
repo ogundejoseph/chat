@@ -56,7 +56,7 @@
                 if(mysqli_num_rows($curr_img) > 0){ //if image already exist then we delete current image before uploading new image
                     $row = mysqli_fetch_assoc($curr_img);
                     if(!empty($row['img']) && $row['img'] != "profile.jpg"){
-                        $path = "images/profiles/$row[img]"; //getting current image location
+                        $path = "../static/images/profiles/$row[img]"; //getting current image location
                         if(file_exists($path)) { //checking if the image is still available in its location
                             unlink($path); //deleting current image
                         } else {
@@ -68,7 +68,7 @@
                 $time = time(); //this will return current time                       
                 $new_img_name = $time.$img_name; //image will be saved and renamed in our folder with current time
 
-                if(move_uploaded_file($tmp_name, "images/profiles/".$new_img_name)){ //if user upload image successfully
+                if(move_uploaded_file($tmp_name, "../static/images/profiles/".$new_img_name)){ //if user upload image successfully
                     //move user uploaded image to images folder
                     //let's update image name inside table
                     $sql2 = mysqli_query($conn, "UPDATE users SET img = '{$new_img_name}' WHERE unique_id = {$outgoing_id}");

@@ -22,11 +22,11 @@
                                     <p>'. $row['msg'] .'</p>
                                     <h5>'. $time .'</h5>
                                  </div>
-                                 <img src="php/images/profiles/'. $row['img'] .'" alt="">
+                                 <img src="static/images/profiles/'. $row['img'] .'" alt="">
                                 </div>';
                 }else{ //..is a message receiver
                     $output .= '<div class="chat incoming">
-                                <img src="php/images/profiles/'. $row['img'] .'" alt="">
+                                <img src="static/images/profiles/'. $row['img'] .'" alt="">
                                 <div class="details">
                                     <p>'. $row['msg'] .'</p>
                                     <h5>'. $time .'</h5>

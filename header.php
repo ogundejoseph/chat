@@ -7,5 +7,5 @@
     <link rel="icon" href="php/images/icons/logo.jpg" type="image/x-icon">
     <title>Say Hii</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
