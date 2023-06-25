@@ -16,15 +16,15 @@
                 if($status <= time() - (365 * 24 * 60 * 60)){
                     $output .= 'Last active '. $date .'';
                 } elseif($status <= time() - (7 * 24 * 60 * 60)){
-                    $output .= 'Last active '. $month . " " . $time .'';
+                    $output .= 'Last active '. $month . " at " . $time .'';
                 } elseif($status <= time() && $status >= time() - 1){
                     $output .= 'Active now';
                 } elseif($day == date("l",time())){
-                    $output .= 'Last active Today '. $time .'';
+                    $output .= 'Last active Today at '. $time .'';
                 } elseif($day == date("l",strtotime("yesterday"))){
-                    $output .= 'Last active Yesterday '. $time .'';
+                    $output .= 'Last active Yesterday at '. $time .'';
                 } else{
-                    $output .= 'Last active '. $day . " " . $time .'';
+                    $output .= 'Last active '. $day . " at " . $time .'';
                 } 
                 echo $output;  
             }
