@@ -2,7 +2,7 @@
 <body id="index">
     <section class="header-wrapper">
         <nav>
-            <a href="."><img src="static/images/icons/home.jpg" class="logo"></a>
+            <a href="/" class="navbar-brand">SayHii</a>
             <ul id="start">
                 <li><a href="login.php">Login</a></li>
                 <li><a href="signup.php">Signup</a></li>
