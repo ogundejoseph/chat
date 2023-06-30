@@ -1,6 +1,5 @@
 <?php
     session_start();
-    date_default_timezone_set('Africa/Nairobi');
     if(isset($_SESSION['unique_id'])){
         include_once "config.php";
         $outgoing_id = mysqli_real_escape_string($conn, $_POST['outgoing_id']);
