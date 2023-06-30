@@ -1,6 +1,5 @@
 <?php
     session_start();
-    date_default_timezone_set('Africa/Nairobi');
     include_once "config.php";
     $outgoing_id = $_SESSION['unique_id'];
     $sql = mysqli_query($conn, "SELECT * FROM users WHERE NOT unique_id = {$outgoing_id}");
