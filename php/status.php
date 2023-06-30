@@ -1,6 +1,5 @@
 <?php
     session_start();
-    date_default_timezone_set('Africa/Nairobi');
     if(isset($_SESSION['unique_id'])){
         include_once "config.php";
         $user_id = $_COOKIE['userId'];
